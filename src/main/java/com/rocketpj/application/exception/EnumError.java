@@ -40,9 +40,15 @@ public enum EnumError {
     // --- Authentication & Authorization ---
     INVALID_CREDENTIALS("E_INVALID_CREDENTIALS", "auth.login.invalid_credentials"),
     ACCOUNT_NOT_ACTIVE("E_ACCOUNT_NOT_ACTIVE", "auth.login.disabled"),
+    ACCOUNT_LOCKED("E_ACCOUNT_LOCKED", "auth.login.blocked"),
+    ACCOUNT_EXPIRED("E_ACCOUNT_EXPIRED", "auth.session.expired"),
+    CREDENTIALS_EXPIRED("E_CREDENTIALS_EXPIRED", "auth.token.expired"),
     INVALID_TOKEN("E_INVALID_TOKEN", "auth.token.invalid"),
     TOKEN_REVOKED("E_TOKEN_REVOKED", "auth.token.invalid"),
     TOKEN_EXPIRED("E_TOKEN_EXPIRED", "auth.token.expired"),
+    REFRESH_TOKEN_REUSE("E_REFRESH_TOKEN_REUSE", "auth.token.reuse_detected"),
+    SESSION_NOT_FOUND("E_SESSION_NOT_FOUND", "auth.session.not_found"),
+    ROLE_NOT_FOUND("E_ROLE_NOT_FOUND", "auth.role.not_found"),
 
     // --- HTTP 4xx ---
     NO_SUPPORT("E_METHOD_NOT_SUPPORTED", "error.method.not.allowed"),
